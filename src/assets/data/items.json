@@ -1,0 +1,10 @@
+[
+  { "id": "coin_pouch",         "name": "Coin Pouch",         "value": 5,   "price": 5   },
+  { "id": "coin_bag",           "name": "Coin Bag",           "value": 20,  "price": 20  },
+  { "id": "small_blade",        "name": "Small Blade",        "value": 10,  "price": 15  },
+  { "id": "sword",              "name": "Sword",              "value": 30,  "price": 60  },
+  { "id": "legendary_axe",      "name": "Legendary Axe",      "value": 80,  "price": 150 },
+  { "id": "armor_shard",        "name": "Armor Shard",        "value": 10,  "price": 20  },
+  { "id": "heavy_shield",       "name": "Heavy Shield",       "value": 40,  "price": 50  },
+  { "id": "dragon_scale_mail",  "name": "Dragon Scale Mail",  "value": 70,  "price": 140 }
+]

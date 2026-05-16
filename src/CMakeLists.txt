@@ -7,16 +7,25 @@ add_executable(huggy-pop-it-battle
     "core/GameWorld.cpp"
     "states/TavernState.cpp"
     "ui/Button.cpp"
+    "assets/data/JsonDataLoader.cpp"
     "states/IGameState.h"
     "entities/Hero.h"
     "entities/HeroTemplate.h"
+    "entities/EnemyTemplate.h"
+    "entities/RoomTemplate.h"
     "items/Item.h"
+    "items/LootEntry.h"
+    "items/LootTable.h"
+    "items/ItemTemplate.h"
+    "assets/AssetManager.h"
+    "assets/data/IDataLoader.h"
+    "assets/data/JsonDataLoader.h"
     "states/TavernState.h"
     "ui/HeroRecruitCard.h"
     "ui/Button.h"
 )
 
-target_link_libraries(huggy-pop-it-battle PRIVATE SFML::Graphics SFML::Window SFML::System)
+target_link_libraries(huggy-pop-it-battle PRIVATE SFML::Graphics SFML::Window SFML::System nlohmann_json::nlohmann_json)
 
 set_target_properties(huggy-pop-it-battle PROPERTIES
     CXX_STANDARD 17
