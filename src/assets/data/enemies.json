@@ -1,0 +1,35 @@
+[
+  {
+    "type": "mini_huggy",
+    "hp": 40,
+    "damage": 8,
+    "coinsForDestroy": 5,
+    "spritePath": "assets/sprites/enemies/mini_huggy.png",
+    "lootTable": [
+      { "itemId": "coin_pouch",  "weight": 60, "minQuantity": 1, "maxQuantity": 1, "price": 5 },
+      { "itemId": "small_blade", "weight": 40, "minQuantity": 1, "maxQuantity": 1, "price": 15 }
+    ]
+  },
+  {
+    "type": "pop_it_soldier",
+    "hp": 60,
+    "damage": 12,
+    "coinsForDestroy": 8,
+    "spritePath": "assets/sprites/enemies/pop_it_soldier.png",
+    "lootTable": [
+      { "itemId": "coin_pouch",   "weight": 50, "minQuantity": 1, "maxQuantity": 2, "price": 5 },
+      { "itemId": "armor_shard",  "weight": 50, "minQuantity": 1, "maxQuantity": 1, "price": 20 }
+    ]
+  },
+  {
+    "type": "big_pop_it",
+    "hp": 120,
+    "damage": 20,
+    "coinsForDestroy": 20,
+    "spritePath": "assets/sprites/enemies/big_pop_it.png",
+    "lootTable": [
+      { "itemId": "heavy_shield", "weight": 30, "minQuantity": 1, "maxQuantity": 1, "price": 50 },
+      { "itemId": "coin_bag",     "weight": 70, "minQuantity": 1, "maxQuantity": 1, "price": 20 }
+    ]
+  }
+]
