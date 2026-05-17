@@ -5,7 +5,7 @@
     "damage": 15,
     "price": 50,
     "minTavernLevel": 1,
-    "spritePath": "assets/sprites/heroes/huggy.png"
+    "spritePath": "assets/sprites/heroes/hero_blue.png"
   },
   {
     "name": "Kissy Missy",
@@ -13,7 +13,7 @@
     "damage": 20,
     "price": 70,
     "minTavernLevel": 1,
-    "spritePath": "assets/sprites/heroes/kissy.png"
+    "spritePath": "assets/sprites/heroes/hero_red.png"
   },
   {
     "name": "Poppy",
@@ -21,7 +21,7 @@
     "damage": 30,
     "price": 120,
     "minTavernLevel": 2,
-    "spritePath": "assets/sprites/heroes/poppy.png"
+    "spritePath": "assets/sprites/heroes/hero_yellow.png"
   },
   {
     "name": "Bunzo Bunny",
@@ -29,6 +29,6 @@
     "damage": 25,
     "price": 200,
     "minTavernLevel": 3,
-    "spritePath": "assets/sprites/heroes/bunzo.png"
+    "spritePath": "assets/sprites/heroes/hero_green.png"
   }
 ]

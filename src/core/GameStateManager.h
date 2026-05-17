@@ -9,7 +9,7 @@
 
 class GameStateManager {
  private:
-  std::stack<std::unique_ptr<IGameState>> states_;
+  std::vector<std::unique_ptr<IGameState>> states_;
   GameWorld& gameWorld_;
   bool exitRequested_ = false;
 

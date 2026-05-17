@@ -2,6 +2,7 @@
 
 #include <vector>
 
+#include "RecruitModalState.h"
 #include "core/GameStateManager.h"
 #include "core/GameWorld.h"
 #include "ui/Button.h"
@@ -21,6 +22,17 @@ class TavernState : public IGameState {
   Button btnPartyManagement_;
   sf::Texture backgroundTexture_;
   sf::Sprite backgroundSprite_;
+  sf::Font coinsFont_;
+  sf::Text coinsText_;
+  sf::Texture coinIconTexture_;
+  sf::Sprite coinsIconSprite_;
+
+  const std::vector<sf::Vector2f> spawnPositions_ = {
+      {150.f, 470.f}, {370.f, 490.f}, {590.f, 475.f}, {810.f, 470.f},
+      {260.f, 390.f}, {480.f, 380.f}, {700.f, 385.f},
+  };
+
+  void openHeroRecruitWindow(int i);
 
   // Inherited via IGameState
   void handleInput(const sf::Event& event) override;
@@ -29,4 +41,5 @@ class TavernState : public IGameState {
   void render(sf::RenderWindow& window) override;
   const bool shouldRenderBelow() const override;
   const bool shouldUpdateBelow() const override;
+  void spawnHeroes();
 };

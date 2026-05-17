@@ -1,6 +1,14 @@
 #include "GameWorld.h"
 
-GameWorld::GameWorld() : coins_(0), tavernLevel_(0) {}
+#include "data/JsonDataLoader.h"
+
+GameWorld::GameWorld()
+    : assetMgr_(std::make_unique<JsonDataLoader>("assets/data")),
+      coins_(100),
+      tavernLevel_(1) {}
+
+GameWorld::GameWorld(std::unique_ptr<IDataLoader> loader)
+    : assetMgr_(std::move(loader)), coins_(100), tavernLevel_(1) {}
 
 AssetManager& GameWorld::getAssetManager() { return assetMgr_; }
 
@@ -10,7 +18,13 @@ std::vector<Hero>& GameWorld::getCurrentParty() { return currentParty_; }
 
 void GameWorld::addCoins() {}
 
-bool GameWorld::tryConsumeCoins(int amount) { return false; }
+bool GameWorld::tryConsumeCoins(int amount) {
+  if (coins_ >= amount) {
+    coins_ -= amount;
+    return true;
+  }
+  return false;
+}
 
 void GameWorld::addItem(std::unique_ptr<Item> item) {}
 
@@ -21,7 +35,7 @@ void GameWorld::clearParty() {}
 void GameWorld::upgradeTavern() {}
 
 std::vector<HeroTemplate> GameWorld::getAvailibleHeroesForTavern() {
-  return std::vector<HeroTemplate>();
+  return assetMgr_.getAvailableHeroes(tavernLevel_);
 }
 
 void GameWorld::startNewRun() {}
