@@ -20,14 +20,40 @@ Button::Button(const sf::String& text, const sf::Vector2f& position,
   sprite_.setPosition(position);
 }
 
-void Button::handleInput(const sf::Event& event) {
+Button::Button(const Button& other)
+
+    : texture_(other.texture_),
+      sprite_(texture_),
+      font_(other.font_),
+      text_(other.text_),
+      onClick(other.onClick) {
+  sprite_.setPosition(other.sprite_.getPosition());
+  text_.setFont(font_);
+}
+
+Button& Button::operator=(const Button& other) {
+  texture_ = other.texture_;
+  font_ = other.font_;
+  text_ = other.text_;
+  onClick = other.onClick;
+  sprite_ = sf::Sprite(texture_);
+  sprite_.setPosition(other.sprite_.getPosition());
+  sprite_.setTextureRect(other.sprite_.getTextureRect());
+  sprite_.setScale(other.sprite_.getScale());
+  text_.setFont(font_);
+  return *this;
+}
+
+bool Button::handleInput(const sf::Event& event) {
   if (const auto* click = event.getIf<sf::Event::MouseButtonPressed>()) {
     if (click->button == sf::Mouse::Button::Left) {
       if (sprite_.getGlobalBounds().contains(sf::Vector2f(click->position))) {
         if (onClick) onClick();
+        return true;
       }
     }
   }
+  return false;
 }
 
 void Button::render(sf::RenderWindow& window) {

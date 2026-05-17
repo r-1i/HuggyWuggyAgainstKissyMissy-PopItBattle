@@ -9,4 +9,13 @@ project("huggy-pop-it-battle")
 
 set(SFML_DIR "C:/_Learning/CPP/SFML/SFML-3.0.2/lib/cmake/SFML")
 
+include(FetchContent)
+FetchContent_Declare(
+    nlohmann_json
+    GIT_REPOSITORY https://github.com/nlohmann/json.git
+    GIT_TAG        v3.11.3
+    GIT_SHALLOW    TRUE
+)
+FetchContent_MakeAvailable(nlohmann_json)
+
 add_subdirectory("src")

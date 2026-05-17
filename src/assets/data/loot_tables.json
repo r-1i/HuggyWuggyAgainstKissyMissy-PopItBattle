@@ -1,0 +1,16 @@
+{
+  "common_drop": [
+    { "itemId": "coin_pouch",  "weight": 70, "minQuantity": 1, "maxQuantity": 1, "price": 5 },
+    { "itemId": "small_blade", "weight": 30, "minQuantity": 1, "maxQuantity": 1, "price": 15 }
+  ],
+  "rare_drop": [
+    { "itemId": "sword",        "weight": 40, "minQuantity": 1, "maxQuantity": 1, "price": 60 },
+    { "itemId": "heavy_shield", "weight": 40, "minQuantity": 1, "maxQuantity": 1, "price": 50 },
+    { "itemId": "coin_bag",     "weight": 20, "minQuantity": 1, "maxQuantity": 1, "price": 30 }
+  ],
+  "boss_drop": [
+    { "itemId": "legendary_axe",    "weight": 30, "minQuantity": 1, "maxQuantity": 1, "price": 150 },
+    { "itemId": "dragon_scale_mail","weight": 30, "minQuantity": 1, "maxQuantity": 1, "price": 140 },
+    { "itemId": "coin_bag",         "weight": 40, "minQuantity": 3, "maxQuantity": 5, "price": 30 }
+  ]
+}

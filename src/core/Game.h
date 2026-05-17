@@ -3,15 +3,14 @@
 #include <SFML/Graphics.hpp>
 #include <memory>
 
-#include "assets/AssetManager.h"
-#include "core/GameStateManager.h"
-#include "core/GameWorld.h"
+#include "GameStateManager.h"
+#include "GameWorld.h"
+#include "data/AssetManager.h"
 
 class Game {
  private:
-  GameStateManager gsm_;
-  AssetManager assetMgr_;
   GameWorld gameWorld_;
+  GameStateManager gsm_;
   sf::RenderWindow renderWindow_;
 
  public:
