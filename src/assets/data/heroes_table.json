@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Blue",
+    "maxHp": 10,
+    "damage": 4,
+    "price": 0,
+    "minTavernLevel": 1,
+    "spritePath": "assets/sprites/heroes/Blue.png"
+  },
+  {
+    "name": "Red",
+    "maxHp": 15,
+    "damage": 5,
+    "price": 10,
+    "minTavernLevel": 1,
+    "spritePath": "assets/sprites/heroes/Red.png"
+  },
+  {
+    "name": "Green",
+    "maxHp": 25,
+    "damage": 7,
+    "price": 25,
+    "minTavernLevel": 1,
+    "spritePath": "assets/sprites/heroes/Green.png"
+  }
+]

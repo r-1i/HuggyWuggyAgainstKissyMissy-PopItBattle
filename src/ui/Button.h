@@ -20,8 +20,10 @@ class Button {
          const sf::Vector2f& size = kButtonSize,
          const std::string& textureFileName = std::string(kDefaultTexture),
          bool overrideSize = true);
+  Button(const Button& other);
+  Button& operator=(const Button& other);
 
   std::function<void()> onClick;
-  void handleInput(const sf::Event& event);
+  bool handleInput(const sf::Event& event);
   void render(sf::RenderWindow& window);
 };

@@ -1,6 +1,6 @@
 #pragma once
 #include <string>
-#include "items/LootTable.h"
+#include "../items/LootTable.h"
 
 struct EnemyTemplate {
     std::string type;

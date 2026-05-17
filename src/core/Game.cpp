@@ -2,7 +2,7 @@
 
 #include <memory>
 
-#include "states/TavernState.h"
+#include "../states/TavernState.h"
 
 Game::Game()
     : renderWindow_(sf::VideoMode({1280, 720}), "Huggy-Wuggy"),

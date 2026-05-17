@@ -3,10 +3,11 @@
 #include <memory>
 #include <vector>
 
-#include "assets/AssetManager.h"
-#include "entities/Hero.h"
-#include "entities/HeroTemplate.h"
-#include "items/Item.h"
+#include "../entities/Hero.h"
+#include "../entities/HeroTemplate.h"
+#include "../items/Item.h"
+#include "data/AssetManager.h"
+#include "data/JsonDataLoader.h"
 
 class GameWorld {
  private:
@@ -17,7 +18,9 @@ class GameWorld {
   int tavernLevel_;
 
  public:
+  const int kMaxSquadSize = 5;
   GameWorld();
+  explicit GameWorld(std::unique_ptr<IDataLoader> loader);
 
   AssetManager& getAssetManager();
   int getCoins();
