@@ -9,4 +9,5 @@ class HeroRecruitCard : public Button {
                   const std::string& textureFileName,
                   HeroTemplate heroRecruitCard, std::function<void()> onClick);
   HeroTemplate heroTemplate;
+  bool isBought = false;
 };

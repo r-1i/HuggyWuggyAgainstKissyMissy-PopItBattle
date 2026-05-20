@@ -2,10 +2,12 @@
 
 RecruitModalState::RecruitModalState(GameStateManager& gsm,
                                      HeroTemplate& heroTemplate,
-                                     GameWorld& gameWorld)
+                                     GameWorld& gameWorld,
+                                     std::function<void()> onBought)
     : gsm_(gsm),
       heroTemplate_(heroTemplate),
       gameWorld_(gameWorld),
+      onBought_(onBought),
       btnBuy_(L"Exit", {10, 10}, {100, 100}),
       btnClose_(L"Close", {10, 10}, {100, 100}),
       heroSprite_(heroTexture_),
@@ -81,6 +83,7 @@ bool RecruitModalState::tryBuyHero() {
   if (gameWorld_.getCurrentParty().size() < gameWorld_.kMaxSquadSize) {
     if (gameWorld_.tryConsumeCoins(heroTemplate_.price)) {
       if (gameWorld_.tryRecruitHero(heroTemplate_)) {
+        if (onBought_) onBought_();
         return true;
       }
     }

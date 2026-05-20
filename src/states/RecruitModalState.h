@@ -11,12 +11,13 @@
 class RecruitModalState : public IGameState {
  public:
   RecruitModalState(GameStateManager& gsm, HeroTemplate& heroTemplate,
-                    GameWorld& gameWorld);
+                    GameWorld& gameWorld, std::function<void()> onBought);
 
  private:
   GameStateManager& gsm_;
   HeroTemplate& heroTemplate_;
   GameWorld& gameWorld_;
+  std::function<void()> onBought_;
 
   sf::RectangleShape background_;
   Button btnClose_;

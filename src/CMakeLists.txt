@@ -26,7 +26,7 @@ add_executable(huggy-pop-it-battle
     "states/TavernState.h"
     "ui/HeroRecruitCard.h"
     "ui/Button.h"
- "states/PartyManagementState.h" "states/RecruitModalState.h")
+ "states/PartyManagementState.h" "states/RecruitModalState.h" "entities/Hero.cpp")
 
 target_link_libraries(huggy-pop-it-battle PRIVATE SFML::Graphics SFML::Window SFML::System nlohmann_json::nlohmann_json)
 
