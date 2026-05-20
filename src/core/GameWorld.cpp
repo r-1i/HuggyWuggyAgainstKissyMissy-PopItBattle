@@ -28,7 +28,13 @@ bool GameWorld::tryConsumeCoins(int amount) {
 
 void GameWorld::addItem(std::unique_ptr<Item> item) {}
 
-bool GameWorld::tryRecruitHero(const HeroTemplate& hero) { return false; }
+bool GameWorld::tryRecruitHero(const HeroTemplate& heroTemplate) {
+  if (currentParty_.size() < kMaxSquadSize) {
+    currentParty_.push_back(Hero(heroTemplate));
+    return true;
+  }
+  return false;
+}
 
 void GameWorld::clearParty() {}
 
