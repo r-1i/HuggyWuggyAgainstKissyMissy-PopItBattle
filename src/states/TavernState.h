@@ -26,6 +26,8 @@ class TavernState : public IGameState {
   sf::Text coinsText_;
   sf::Texture coinIconTexture_;
   sf::Sprite coinsIconSprite_;
+  sf::Texture squadUITexture_;
+  sf::Sprite squadUISprite_;
 
   const std::vector<sf::Vector2f> spawnPositions_ = {
       {150.f, 470.f}, {370.f, 490.f}, {590.f, 475.f}, {810.f, 470.f},
