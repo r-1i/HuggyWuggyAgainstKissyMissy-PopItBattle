@@ -5,7 +5,8 @@
     "damage": 15,
     "price": 50,
     "minTavernLevel": 1,
-    "spritePath": "assets/sprites/heroes/hero_blue.png"
+    "spritePath": "assets/sprites/heroes/hero_blue.png",
+    "iconPath": "assets/sprites/icons/hero_blue_icon.png"
   },
   {
     "name": "Kissy Missy",
@@ -13,7 +14,8 @@
     "damage": 20,
     "price": 70,
     "minTavernLevel": 1,
-    "spritePath": "assets/sprites/heroes/hero_red.png"
+    "spritePath": "assets/sprites/heroes/hero_red.png",
+    "iconPath": "assets/sprites/icons/hero_red_icon.png"
   },
   {
     "name": "Poppy",
