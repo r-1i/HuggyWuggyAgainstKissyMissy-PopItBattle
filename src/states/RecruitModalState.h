@@ -19,7 +19,8 @@ class RecruitModalState : public IGameState {
   GameWorld& gameWorld_;
   std::function<void()> onBought_;
 
-  sf::RectangleShape background_;
+  sf::Texture backgroundTexture_;
+  sf::Sprite backgroundSprite_;
   Button btnClose_;
   Button btnBuy_;
   sf::Texture heroTexture_;

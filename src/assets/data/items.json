@@ -1,10 +1,56 @@
 [
-  { "id": "coin_pouch",         "name": "Coin Pouch",         "value": 5,   "price": 5   },
-  { "id": "coin_bag",           "name": "Coin Bag",           "value": 20,  "price": 20  },
-  { "id": "small_blade",        "name": "Small Blade",        "value": 10,  "price": 15  },
-  { "id": "sword",              "name": "Sword",              "value": 30,  "price": 60  },
-  { "id": "legendary_axe",      "name": "Legendary Axe",      "value": 80,  "price": 150 },
-  { "id": "armor_shard",        "name": "Armor Shard",        "value": 10,  "price": 20  },
-  { "id": "heavy_shield",       "name": "Heavy Shield",       "value": 40,  "price": 50  },
-  { "id": "dragon_scale_mail",  "name": "Dragon Scale Mail",  "value": 70,  "price": 140 }
+  {
+    "id": "pop_it_dart",
+    "name": "Pop-It Dart",
+    "type": "weapon",
+    "effectValue": 8,
+    "value": 10,
+    "price": 20,
+    "spritePath": "assets/sprites/items/pop_it_0.png"
+  },
+  {
+    "id": "bubble_blaster",
+    "name": "Bubble Blaster",
+    "type": "weapon",
+    "effectValue": 15,
+    "value": 25,
+    "price": 50,
+    "spritePath": "assets/sprites/items/pop_it_0.png"
+  },
+  {
+    "id": "rainbow_popper",
+    "name": "Rainbow Popper",
+    "type": "weapon",
+    "effectValue": 30,
+    "value": 60,
+    "price": 100,
+    "spritePath": "assets/sprites/items/pop_it_0.png"
+  },
+  {
+    "id": "pop_it_shield",
+    "name": "Pop-It Shield",
+    "type": "armor",
+    "effectValue": 8,
+    "value": 10,
+    "price": 20,
+    "spritePath": "assets/sprites/items/pop_it_0.png"
+  },
+  {
+    "id": "bubble_vest",
+    "name": "Bubble Vest",
+    "type": "armor",
+    "effectValue": 15,
+    "value": 25,
+    "price": 50,
+    "spritePath": "assets/sprites/items/pop_it_0.png"
+  },
+  {
+    "id": "pop_it_fortress",
+    "name": "Pop-It Fortress",
+    "type": "armor",
+    "effectValue": 30,
+    "value": 60,
+    "price": 100,
+    "spritePath": "assets/sprites/items/pop_it_0.png"
+  }
 ]

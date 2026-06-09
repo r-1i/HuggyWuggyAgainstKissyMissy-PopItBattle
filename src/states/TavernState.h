@@ -26,15 +26,32 @@ class TavernState : public IGameState {
   sf::Text coinsText_;
   sf::Texture coinIconTexture_;
   sf::Sprite coinsIconSprite_;
+  sf::Texture coinsBgTexture_;
+  sf::Sprite coinsBgSprite_;
   sf::Texture squadUITexture_;
   sf::Sprite squadUISprite_;
 
+  std::vector<sf::Texture> partyIconTextures_;
+  std::vector<sf::Sprite> partyIconSprites_;
+
+  // Slots centers on squad_ui.png (450x150) from top left angle.
+  static constexpr float kPartyIconSize = 56.f;
+  const std::vector<sf::Vector2f> partySlotCenters_ = {
+      {57.f, 86.f}, {139.f, 86.f}, {222.f, 86.f}, {304.f, 86.f}, {386.f, 86.f},
+  };
+
   const std::vector<sf::Vector2f> spawnPositions_ = {
-      {150.f, 470.f}, {370.f, 490.f}, {590.f, 475.f}, {810.f, 470.f},
-      {260.f, 390.f}, {480.f, 380.f}, {700.f, 385.f},
+      {175.f, 415.f},  // left floor, near pop-it stand
+      {435.f, 445.f},  // center-left floor
+      {890.f, 430.f},  // right floor
+      {1060.f, 400.f}, // far right floor
+      {275.f, 400.f},  // back left, behind pop-it stand
+      {530.f, 390.f},  // back center, near box stand
+      {760.f, 418.f},  // back right
   };
 
   void openHeroRecruitWindow(int i);
+  void refreshPartySlots();
 
   // Inherited via IGameState
   void handleInput(const sf::Event& event) override;
