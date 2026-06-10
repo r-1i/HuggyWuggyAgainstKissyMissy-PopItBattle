@@ -1,14 +1,17 @@
 #pragma once
+#include <random>
+#include <string>
 #include <vector>
 #include "LootEntry.h"
 
 class LootTable {
 public:
-    LootTable() = default;
-    explicit LootTable(std::vector<LootEntry> entries) : entries_(std::move(entries)) {}
+    int itemCountMin = 0;
+    int itemCountMax = 0;
+    int coinsMin = 0;
+    int coinsMax = 0;
+    std::vector<LootEntry> items;
 
-    const std::vector<LootEntry>& getEntries() const { return entries_; }
-
-private:
-    std::vector<LootEntry> entries_;
+    int rollCoins(std::mt19937& rng) const;
+    std::vector<std::string> rollItemIds(std::mt19937& rng) const;
 };

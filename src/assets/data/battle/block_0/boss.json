@@ -1,0 +1,16 @@
+{
+  "name": "Big Pop-It",
+  "hp": 150,
+  "damage": 18,
+  "spritePath": "assets/sprites/battle/boss_0.png",
+  "lootTable": {
+    "itemCountMin": 1,
+    "itemCountMax": 1,
+    "coinsMin": 30,
+    "coinsMax": 50,
+    "items": [
+      { "itemId": "rainbow_popper", "weight": 50, "minQuantity": 1, "maxQuantity": 1 },
+      { "itemId": "pop_it_fortress", "weight": 50, "minQuantity": 1, "maxQuantity": 1 }
+    ]
+  }
+}

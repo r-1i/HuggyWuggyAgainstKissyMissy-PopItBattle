@@ -6,5 +6,4 @@ struct LootEntry {
     int weight = 1;
     int minQuantity = 1;
     int maxQuantity = 1;
-    int price = 0;
 };

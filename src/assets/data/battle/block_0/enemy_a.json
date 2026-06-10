@@ -1,0 +1,16 @@
+{
+  "name": "Pop-It Crawler",
+  "hp": 100,
+  "damage": 20,
+  "spritePath": "assets/sprites/battle/enemy_0_0.png",
+  "lootTable": {
+    "itemCountMin": 0,
+    "itemCountMax": 1,
+    "coinsMin": 2,
+    "coinsMax": 6,
+    "items": [
+      { "itemId": "pop_it_dart", "weight": 60, "minQuantity": 1, "maxQuantity": 1 },
+      { "itemId": "pop_it_shield", "weight": 40, "minQuantity": 1, "maxQuantity": 1 }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Pop-It Soldier",
+  "hp": 45,
+  "damage": 8,
+  "spritePath": "assets/sprites/battle/enemy_0_1.png",
+  "lootTable": {
+    "itemCountMin": 0,
+    "itemCountMax": 1,
+    "coinsMin": 4,
+    "coinsMax": 10,
+    "items": [
+      { "itemId": "bubble_blaster", "weight": 50, "minQuantity": 1, "maxQuantity": 1 },
+      { "itemId": "bubble_vest", "weight": 50, "minQuantity": 1, "maxQuantity": 1 }
+    ]
+  }
+}

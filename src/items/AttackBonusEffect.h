@@ -8,6 +8,7 @@ class AttackBonusEffect : public ItemEffect {
 
   void onEquip(Hero& hero) override;
   void onUnequip(Hero& hero) override;
+  int getValue() const override { return bonusDamage_; }
 
  private:
   int bonusDamage_;

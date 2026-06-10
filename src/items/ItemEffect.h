@@ -11,4 +11,5 @@ class ItemEffect {
   virtual void onUnequip(Hero& hero) = 0;
   virtual void onAttack(CombatEntity& attacker, CombatEntity& target) {}
   virtual void onTakeDamage(CombatEntity& owner, int& damageAmount) {}
+  virtual int getValue() const { return 0; }
 };

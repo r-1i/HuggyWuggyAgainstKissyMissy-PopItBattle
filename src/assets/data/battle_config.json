@@ -1,0 +1,112 @@
+[
+  {
+    "backgroundPath": "assets/sprites/battle/location_0.png",
+    "enemyGroups": [
+      { "path": "assets/data/battle/block_0/enemy_a.json", "weight": 1 },
+      { "path": "assets/data/battle/block_0/enemy_b.json", "weight": 1 }
+    ],
+    "minEnemies": 1,
+    "maxEnemies": 3,
+    "chestPath": "assets/data/battle/block_0/chest.json",
+    "bossPath": "assets/data/battle/block_0/boss.json"
+  },
+  {
+    "backgroundPath": "assets/sprites/battle/location_0.png",
+    "enemyGroups": [
+      { "path": "assets/data/battle/block_0/enemy_a.json", "weight": 1 },
+      { "path": "assets/data/battle/block_0/enemy_b.json", "weight": 1 }
+    ],
+    "minEnemies": 1,
+    "maxEnemies": 3,
+    "chestPath": "assets/data/battle/block_0/chest.json",
+    "bossPath": "assets/data/battle/block_0/boss.json"
+  },
+  {
+    "backgroundPath": "assets/sprites/battle/location_0.png",
+    "enemyGroups": [
+      { "path": "assets/data/battle/block_0/enemy_a.json", "weight": 1 },
+      { "path": "assets/data/battle/block_0/enemy_b.json", "weight": 1 }
+    ],
+    "minEnemies": 1,
+    "maxEnemies": 3,
+    "chestPath": "assets/data/battle/block_0/chest.json",
+    "bossPath": "assets/data/battle/block_0/boss.json"
+  },
+  {
+    "backgroundPath": "assets/sprites/battle/location_0.png",
+    "enemyGroups": [
+      { "path": "assets/data/battle/block_0/enemy_a.json", "weight": 1 },
+      { "path": "assets/data/battle/block_0/enemy_b.json", "weight": 1 }
+    ],
+    "minEnemies": 1,
+    "maxEnemies": 3,
+    "chestPath": "assets/data/battle/block_0/chest.json",
+    "bossPath": "assets/data/battle/block_0/boss.json"
+  },
+  {
+    "backgroundPath": "assets/sprites/battle/location_0.png",
+    "enemyGroups": [
+      { "path": "assets/data/battle/block_0/enemy_a.json", "weight": 1 },
+      { "path": "assets/data/battle/block_0/enemy_b.json", "weight": 1 }
+    ],
+    "minEnemies": 1,
+    "maxEnemies": 3,
+    "chestPath": "assets/data/battle/block_0/chest.json",
+    "bossPath": "assets/data/battle/block_0/boss.json"
+  },
+  {
+    "backgroundPath": "assets/sprites/battle/location_0.png",
+    "enemyGroups": [
+      { "path": "assets/data/battle/block_0/enemy_a.json", "weight": 1 },
+      { "path": "assets/data/battle/block_0/enemy_b.json", "weight": 1 }
+    ],
+    "minEnemies": 1,
+    "maxEnemies": 3,
+    "chestPath": "assets/data/battle/block_0/chest.json",
+    "bossPath": "assets/data/battle/block_0/boss.json"
+  },
+  {
+    "backgroundPath": "assets/sprites/battle/location_0.png",
+    "enemyGroups": [
+      { "path": "assets/data/battle/block_0/enemy_a.json", "weight": 1 },
+      { "path": "assets/data/battle/block_0/enemy_b.json", "weight": 1 }
+    ],
+    "minEnemies": 1,
+    "maxEnemies": 3,
+    "chestPath": "assets/data/battle/block_0/chest.json",
+    "bossPath": "assets/data/battle/block_0/boss.json"
+  },
+  {
+    "backgroundPath": "assets/sprites/battle/location_0.png",
+    "enemyGroups": [
+      { "path": "assets/data/battle/block_0/enemy_a.json", "weight": 1 },
+      { "path": "assets/data/battle/block_0/enemy_b.json", "weight": 1 }
+    ],
+    "minEnemies": 1,
+    "maxEnemies": 3,
+    "chestPath": "assets/data/battle/block_0/chest.json",
+    "bossPath": "assets/data/battle/block_0/boss.json"
+  },
+  {
+    "backgroundPath": "assets/sprites/battle/location_0.png",
+    "enemyGroups": [
+      { "path": "assets/data/battle/block_0/enemy_a.json", "weight": 1 },
+      { "path": "assets/data/battle/block_0/enemy_b.json", "weight": 1 }
+    ],
+    "minEnemies": 1,
+    "maxEnemies": 3,
+    "chestPath": "assets/data/battle/block_0/chest.json",
+    "bossPath": "assets/data/battle/block_0/boss.json"
+  },
+  {
+    "backgroundPath": "assets/sprites/battle/location_0.png",
+    "enemyGroups": [
+      { "path": "assets/data/battle/block_0/enemy_a.json", "weight": 1 },
+      { "path": "assets/data/battle/block_0/enemy_b.json", "weight": 1 }
+    ],
+    "minEnemies": 1,
+    "maxEnemies": 3,
+    "chestPath": "assets/data/battle/block_0/chest.json",
+    "bossPath": "assets/data/battle/block_0/boss.json"
+  }
+]

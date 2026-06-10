@@ -1,0 +1,18 @@
+{
+  "name": "Treasure Chest",
+  "hp": 1,
+  "damage": 0,
+  "spritePath": "assets/sprites/battle/chest.png",
+  "lootTable": {
+    "itemCountMin": 1,
+    "itemCountMax": 3,
+    "coinsMin": 10,
+    "coinsMax": 25,
+    "items": [
+      { "itemId": "pop_it_dart", "weight": 25, "minQuantity": 1, "maxQuantity": 1 },
+      { "itemId": "pop_it_shield", "weight": 25, "minQuantity": 1, "maxQuantity": 1 },
+      { "itemId": "bubble_blaster", "weight": 25, "minQuantity": 1, "maxQuantity": 1 },
+      { "itemId": "bubble_vest", "weight": 25, "minQuantity": 1, "maxQuantity": 1 }
+    ]
+  }
+}

@@ -4,6 +4,7 @@
 #include <iostream>
 #include <random>
 
+#include "BattleState.h"
 #include "PartyManagementState.h"
 
 TavernState::TavernState(GameStateManager& gsm, GameWorld& gameWorld)
@@ -44,6 +45,9 @@ TavernState::TavernState(GameStateManager& gsm, GameWorld& gameWorld)
   btnPartyManagement_.onClick = [&gsm, &gameWorld]() {
     gsm.pushState(std::make_unique<PartyManagementState>(gsm, gameWorld));
   };
+  btnGoToBattle_.onClick = [&gsm, &gameWorld]() {
+    gsm.pushState(std::make_unique<BattleState>(gsm, gameWorld));
+  };
 
   backgroundTexture_.loadFromFile("assets/sprites/tavern_background.jpg");
   backgroundSprite_.setTexture(backgroundTexture_, true);
@@ -74,7 +78,10 @@ void TavernState::handleInput(const sf::Event& event) {
 
 void TavernState::update(float dt) {}
 
-void TavernState::onResume() { refreshPartySlots(); }
+void TavernState::onResume() {
+  spawnHeroes();
+  refreshPartySlots();
+}
 
 void TavernState::render(sf::RenderWindow& window) {
   window.draw(backgroundSprite_);
